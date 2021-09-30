@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="   https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>CoinLayer API</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Live</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Bitcoin</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Ethereum</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- RESULTS SECTION -->
+    <form class="form bg-dark text-light p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-lg-flex">
+          <p class="mx-2">
+            <label for="currency">Currency:</label>
+            <input type="text" id="currency" class="currency" />
+          </p>
+          <p class="mx-2">
+            <label for="date">Date: </label>
+            <input type="date" id="date" class="date" value="2011-01-01" min="2011-01-01" required />
+          </p>
+          <button type="submit" class="submit mx-5">Submit</button>
+        </div>
+      </div>
+    </form>
+    <section class="bg-dark text-light p-5 text-center text-sm-center">
+        <div class="container">
+            <div class="d-lg-flex">
+                <p class="results mx-5"></p>
+            </div>
+        </div>
+    </section>
+  </body>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"
+  ></script>
+  <!-- MY SCRIPTS -->
+  <script type="text/javascript" src="scripts.js"></script>
+</html>
