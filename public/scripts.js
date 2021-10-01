@@ -16,10 +16,26 @@ async function fetchResults(e) {
     console.log(json);
 
     const currencyInput = currency.value;
+    console.log(currencyInput);
 
-    const rate = json.rates.currencyInput;
+    const dateInput = date.value;
 
-    results.textContent=`${currency.value} is worth $${rates.currencyInput}`;
+    if(currencyInput === 'BTC') {
+        const rate = json.rates.BTC;
+        console.log(rate);
+        
+        const price = (json.rates.BTC).toFixed(2);
+    
+        results.textContent=`${currencyInput} was worth $${price} USD on ${dateInput}!`;
+    } else if(currencyInput === 'ETH') {
+        const rate = json.rates.ETH;
+        console.log(rate);
+        
+        const price = (json.rates.ETH).toFixed(2);
+    
+        results.textContent=`${currencyInput} was worth $${price} USD on ${dateInput}`;
+    }
+   
 
 }
 

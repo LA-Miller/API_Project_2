@@ -16,31 +16,14 @@
 
     <title>CoinLayer API</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container">
-        <a href="#" class="navbar-brand">Live</a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Bitcoin</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Ethereum</a>
-            </li>
-          </ul>
-        </div>
+        <a href="#" class="navbar-brand">
+          <img src="./assets/crypto-currency.jpg" alt="" width='55' height='55'>
+          Currency Converter
+        </a>
       </div>
     </nav>
 
@@ -48,11 +31,11 @@
     <form class="form bg-dark text-light p-5 text-center text-sm-start">
       <div class="container">
         <div class="d-lg-flex">
-          <p class="mx-2">
+          <p>
             <label for="currency">Currency:</label>
             <input type="text" id="currency" class="currency" />
           </p>
-          <p class="mx-2">
+          <p>
             <label for="date">Date: </label>
             <input type="date" id="date" class="date" value="2011-01-01" min="2011-01-01" required />
           </p>
@@ -63,7 +46,9 @@
     <section class="bg-dark text-light p-5 text-center text-sm-center">
         <div class="container">
             <div class="d-lg-flex">
-                <p class="results mx-5"></p>
+                <p class="results">
+
+                </p>
             </div>
         </div>
     </section>
