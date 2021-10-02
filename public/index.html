@@ -13,42 +13,96 @@
     />
     <!-- MY CSS -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <title>CoinLayer API</title>
   </head>
   <body class="bg-dark">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container">
-        <a href="#" class="navbar-brand">
-          <img src="./assets/crypto-currency.jpg" alt="" width='55' height='55'>
+      <div class="container-fluid">
+        <a href="https://coinlayer.com/" class="navbar-brand">
+          <img
+            src="./assets/crypto-currency.jpg"
+            alt=""
+            width="55"
+            height="55"
+          />
           Currency Converter
         </a>
       </div>
     </nav>
 
-    <!-- RESULTS SECTION -->
-    <form>
-      <div class="form-group">
-            <label for="currency">Currency</label>
-            <input type="text" class="form-control" id="currency" />
-          <p>
-            <label for="date">Date: </label>
-            <input type="date" id="date" class="date" value="2011-01-01" min="2011-01-01" required />
-          </p>
-          <button type="submit" class="submit mx-5">Submit</button>
-        </div>
+    <div class="head text-center my-5 mx-auto">
+      <div class="container">
+        <h1>Convert Cryptocurrency to US Dollars</h1>
+        <h3>Supported Currencies</h3>
+        <ul>
+          <li>Bitcoin = BTC</li>
+          <li>Ethereum = ETH</li>
+          <li>Litecoin = LTC</li>
+          <li>Cardano = ADA</li>
+          <li>Polkadot = DOT</li>
+          <li>Bitcoin Cash = BCH</li>
+          <li>Stellar = XLM</li>
+          <li>Chainlink = LINK</li>
+          <li>Binance Coin = BNB</li>
+          <li>Tether = USDT</li>
+        </ul>
       </div>
-    </form>
-    <section class="bg-dark text-light p-5 text-center text-sm-center">
-        <div class="container">
-            <div class="d-lg-flex">
-                <p class="results">
+    </div>
 
-                </p>
-            </div>
+    <!-- RESULTS SECTION -->\
+    <div class="center">
+      <form class="w-50 my-5 mx-1 p-3">
+        <div class="form-group">
+          <label for="currency">Currency</label>
+          <input
+            type="text"
+            class="form-control"
+            id="currency"
+            placeholder="Enter Currency"
+            aria-describedby="currency"
+            required
+          />
+          <div id="currency" class="form-text">
+            Enter the abbreviation for your desired currency
+          </div>
         </div>
-    </section>
+        <div class="form-group my-3">
+          <label for="date">Date </label>
+          <input
+            type="date"
+            id="date"
+            class="form-control"
+            placeholder="Date"
+            aria-describedby="date"
+            required
+          />
+          <div id="date" class="form-text">
+            Date cannot be earlier than 01/01/2011
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="center">
+      <section class="bg-dark text-light p-5 text-center text-sm-center">
+        <div class="container">
+          <div class="d-lg-flex">
+            <p class="results"></p>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
   <!-- JavaScript Bundle with Popper -->
   <script

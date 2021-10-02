@@ -1,4 +1,40 @@
-.label {
-    display: inline-block;
-    width: auto;
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    border: 3px solid gold;
+    border-radius: 10px;
+}
+
+label {
+  color: white;
+}
+
+.head  {
+    color: white;
+    
+    
+}
+
+form {
+    border: 2px solid gold;
+    border-radius: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: gold;
 }
