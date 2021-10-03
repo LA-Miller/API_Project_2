@@ -49,13 +49,6 @@ async function fetchResults(e) {
         const price = (json.rates.ADA).toFixed(2);
     
         results.textContent=`Cardano was worth $${price} on ${dateInput}.`;
-    } else if(currencyInput === 'DOT') {
-        const rate = json.rates.DOT;
-        console.log(rate);
-        
-        const price = (json.rates.DOT).toFixed(2);
-    
-        results.textContent=`Polkadot was worth $${price} on ${dateInput}.`;
     } else if(currencyInput === 'BCH') {
         const rate = json.rates.BCH;
         console.log(rate);
