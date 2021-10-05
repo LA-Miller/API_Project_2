@@ -1,5 +1,5 @@
 const baseURL = 'http://api.coinlayer.com/api/';
-const key = '667a09df5bc63be6bc20eb006530da6e';
+const key = 'c59881d1b02dc9123d4654350c0def62';
 
 const searchForm = document.querySelector('form');
 const date = document.querySelector('#date');
